@@ -31,6 +31,33 @@ docker run --rm \
     hotio/unpackerr
 ```
 
+Compose:
+
+```yaml
+version: "3.7"
+
+services:
+  unpackerr:
+    container_name: unpackerr
+    image: hotio/unpackerr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - UMASK=002
+      - TZ=Etc/UTC
+      - ARGS
+      - DEBUG=no
+      - UN_SONARR_0_URL=http://sonarr:8989
+      - UN_SONARR_0_API_KEY=<yourapikey>
+      - UN_RADARR_0_URL=http://radarr:7878
+      - UN_RADARR_0_API_KEY=<yourapikey>
+      - UN_LIDARR_0_URL=http://lidarr:8686
+      - UN_LIDARR_0_API_KEY=<yourapikey>
+    volumes:
+      - /<host_folder_config>:/config
+      - /<host_folder_downloads>:/downloads
+```
+
 ## Tags
 
 | Tag                | Upstream                      | Version | Build |
