@@ -64,6 +64,8 @@ services:
       - /<host_folder_downloads>:/downloads
 ```
 
+For all available unpackerr (`UN_...`) environment variables, visit the [upstream project](https://github.com/davidnewhall/unpackerr#docker-env-variables) their documentation.
+
 ## Tags
 
 | Tag                | Upstream                      | Version | Build |
