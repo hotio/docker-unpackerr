@@ -22,10 +22,13 @@ docker run --rm \
     -e DEBUG="no" \
     -e UN_SONARR_0_URL="http://sonarr:8989" \
     -e UN_SONARR_0_API_KEY="<yourapikey>" \
+    -e UN_SONARR_0_PATHS_0="/downloads" \
     -e UN_RADARR_0_URL="http://radarr:7878" \
     -e UN_RADARR_0_API_KEY="<yourapikey>" \
+    -e UN_RADARR_0_PATHS_0="/downloads" \
     -e UN_LIDARR_0_URL="http://lidarr:8686" \
     -e UN_LIDARR_0_API_KEY="<yourapikey>" \
+    -e UN_LIDARR_0_PATHS_0="/downloads" \
     -v /<host_folder_config>:/config \
     -v /<host_folder_downloads>:/downloads \
     hotio/unpackerr
@@ -49,10 +52,13 @@ services:
       - DEBUG=no
       - UN_SONARR_0_URL=http://sonarr:8989
       - UN_SONARR_0_API_KEY=<yourapikey>
+      - UN_SONARR_0_PATHS_0=/downloads
       - UN_RADARR_0_URL=http://radarr:7878
       - UN_RADARR_0_API_KEY=<yourapikey>
+      - UN_RADARR_0_PATHS_0=/downloads
       - UN_LIDARR_0_URL=http://lidarr:8686
       - UN_LIDARR_0_API_KEY=<yourapikey>
+      - UN_LIDARR_0_PATHS_0=/downloads
     volumes:
       - /<host_folder_config>:/config
       - /<host_folder_downloads>:/downloads
