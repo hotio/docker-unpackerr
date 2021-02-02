@@ -20,17 +20,7 @@ docker run --rm \
     -e TZ="Etc/UTC" \
     -e ARGS="" \
     -e DEBUG="no" \
-    -e UN_SONARR_0_URL="http://sonarr:8989" \
-    -e UN_SONARR_0_API_KEY="<yourapikey>" \
-    -e UN_SONARR_0_PATHS_0="/downloads" \
-    -e UN_RADARR_0_URL="http://radarr:7878" \
-    -e UN_RADARR_0_API_KEY="<yourapikey>" \
-    -e UN_RADARR_0_PATHS_0="/downloads" \
-    -e UN_LIDARR_0_URL="http://lidarr:8686" \
-    -e UN_LIDARR_0_API_KEY="<yourapikey>" \
-    -e UN_LIDARR_0_PATHS_0="/downloads" \
     -v /<host_folder_config>:/config \
-    -v /<host_folder_downloads>:/downloads \
     hotio/unpackerr
 ```
 
@@ -50,21 +40,9 @@ services:
       - TZ=Etc/UTC
       - ARGS
       - DEBUG=no
-      - UN_SONARR_0_URL=http://sonarr:8989
-      - UN_SONARR_0_API_KEY=<yourapikey>
-      - UN_SONARR_0_PATHS_0=/downloads
-      - UN_RADARR_0_URL=http://radarr:7878
-      - UN_RADARR_0_API_KEY=<yourapikey>
-      - UN_RADARR_0_PATHS_0=/downloads
-      - UN_LIDARR_0_URL=http://lidarr:8686
-      - UN_LIDARR_0_API_KEY=<yourapikey>
-      - UN_LIDARR_0_PATHS_0=/downloads
     volumes:
       - /<host_folder_config>:/config
-      - /<host_folder_downloads>:/downloads
 ```
-
-For all available unpackerr (`UN_...`) environment variables, visit the [upstream project](https://github.com/davidnewhall/unpackerr#docker-env-variables) their documentation.
 
 ## Tags
 
@@ -78,7 +56,7 @@ You can also find tags that reference a commit or version number.
 
 ## Configuration
 
-You can use docker environment variables or a configuration file that should be stored in `/config/app/unpackerr.conf`. Don't forget to mount your volume where Unpackerr should look to find your downloads. You should use the same volume as is used in the Sonarr/Radarr/Lidarr containers. More advanced configuration methods are possible too, but take a look at the [upstream](https://github.com/davidnewhall/unpackerr) project page for more info on that.
+You can use docker environment variables or a configuration file that should be stored in `/config/app/unpackerr.conf`. Don't forget to mount your volume where Unpackerr should look to find your downloads. Take a look at the [upstream](https://github.com/davidnewhall/unpackerr) project page for info on how to configure Unpackerr.
 
 ## Executing your own scripts
 
