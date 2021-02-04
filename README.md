@@ -44,7 +44,7 @@ services:
 
 ## Tags
 
-Go [here](https://hotio.dev/containers-overview/#hotiounpackerr) to see all available tags.
+Go [here](https://hotio.dev/tags-overview/#hotiounpackerr) to see all available tags.
 
 ## Configuration
 
