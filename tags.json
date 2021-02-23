@@ -4,21 +4,21 @@
       "name": "release",
       "version": "0.7.2",
       "commit": "642d40e",
-      "upstream": "",
+      "upstream": "Releases",
       "lastUpdated": "2021-02-23T13:10:29.442Z"
     },
     {
       "name": "testing",
       "version": "0.8.0-beta3",
       "commit": "cf02e88",
-      "upstream": "",
+      "upstream": "Pre-releases",
       "lastUpdated": "2021-02-23T13:10:47.551Z"
     },
     {
       "name": "nightly",
       "version": "18887faf32d33d620f6e2f2a5d35c9630eb20a65",
       "commit": "5e79ff5",
-      "upstream": "",
+      "upstream": "Every commit to master",
       "lastUpdated": "2021-02-23T13:11:08.095Z"
     }
   ]
