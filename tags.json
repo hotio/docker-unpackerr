@@ -9,10 +9,10 @@
     },
     {
       "name": "testing",
-      "version": "0.9.4",
-      "commit": "cb3ac3b",
+      "version": "0.9.5",
+      "commit": "bc9aa6d",
       "upstream": "Pre-releases",
-      "lastUpdated": "2021-04-14T20:39:08.142Z"
+      "lastUpdated": "2021-06-05T06:26:43.025Z"
     },
     {
       "name": "nightly",
